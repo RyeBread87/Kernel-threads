@@ -1,0 +1,330 @@
+starting build
+
+**********************************************************************
+
+Test build
+build xv6 using make
+
+**********************************************************************
+Trying to build project using make
+make
+make: *** No targets specified and no makefile found.  Stop.
+
+
+test build FAILED
+ (build xv6 using make)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+starting clone
+
+**********************************************************************
+
+Test clone
+clone and verify that address space is shared
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/clone.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test clone FAILED (0 of 9)
+ (clone and verify that address space is shared)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting badclone
+
+**********************************************************************
+
+Test badclone
+clone with bad stack argument
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/badclone.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test badclone FAILED (0 of 6)
+ (clone with bad stack argument)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting join4
+
+**********************************************************************
+
+Test join4
+join, not wait, should handle threads
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/join4.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test join4 FAILED (0 of 3)
+ (join, not wait, should handle threads)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting thread2
+
+**********************************************************************
+
+Test thread2
+memory leaks from thread library?
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/thread2.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test thread2 FAILED (0 of 7)
+ (memory leaks from thread library?)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting join3
+
+**********************************************************************
+
+Test join3
+join should not handle child processes (forked)
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/join3.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test join3 FAILED (0 of 3)
+ (join should not handle child processes (forked))
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting join2
+
+**********************************************************************
+
+Test join2
+join argument checking
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/join2.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test join2 FAILED (0 of 6)
+ (join argument checking)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting clone3
+
+**********************************************************************
+
+Test clone3
+clone copies file descriptors, but doesn't share
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/clone3.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test clone3 FAILED (0 of 3)
+ (clone copies file descriptors, but doesn't share)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting clone2
+
+**********************************************************************
+
+Test clone2
+clone and play with the argument
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/clone2.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test clone2 FAILED (0 of 6)
+ (clone and play with the argument)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting stack
+
+**********************************************************************
+
+Test stack
+set up stack correctly (and without extra items)
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/stack.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test stack FAILED (0 of 8)
+ (set up stack correctly (and without extra items))
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting size
+
+**********************************************************************
+
+Test size
+check that address space size is updated in threads
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/size.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test size FAILED (0 of 7)
+ (check that address space size is updated in threads)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting multi
+
+**********************************************************************
+
+Test multi
+multiple threads with some depth of function calls
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/multi.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test multi FAILED (0 of 8)
+ (multiple threads with some depth of function calls)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting noexit
+
+**********************************************************************
+
+Test noexit
+no exit call in thread, should trap at bogus address
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/noexit.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test noexit FAILED (0 of 7)
+ (no exit call in thread, should trap at bogus address)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting join
+
+**********************************************************************
+
+Test join
+clone and join syscalls
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/join.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test join FAILED (0 of 9)
+ (clone and join syscalls)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting thread
+
+**********************************************************************
+
+Test thread
+thread user library functions
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/thread.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test thread FAILED (0 of 10)
+ (thread user library functions)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+starting locks
+
+**********************************************************************
+
+Test locks
+test lock correctness
+
+**********************************************************************
+Running xv6 user progam /u/c/s/cs537-1/ta/tests/4b/tests/locks.c
+IOError: [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+
+test locks FAILED (0 of 8)
+ (test lock correctness)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+**********************************************************************
+Summary:
+test build FAILED
+ (build xv6 using make)
+ make failed (error 2)
+ required file 'xv6.img' does not exist after make
+ required file 'fs.img' does not exist after make
+
+test clone FAILED (0 of 9)
+ (clone and verify that address space is shared)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test badclone FAILED (0 of 6)
+ (clone with bad stack argument)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test join4 FAILED (0 of 3)
+ (join, not wait, should handle threads)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test thread2 FAILED (0 of 7)
+ (memory leaks from thread library?)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test join3 FAILED (0 of 3)
+ (join should not handle child processes (forked))
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test join2 FAILED (0 of 6)
+ (join argument checking)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test clone3 FAILED (0 of 3)
+ (clone copies file descriptors, but doesn't share)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test clone2 FAILED (0 of 6)
+ (clone and play with the argument)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test stack FAILED (0 of 8)
+ (set up stack correctly (and without extra items))
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test size FAILED (0 of 7)
+ (check that address space size is updated in threads)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test multi FAILED (0 of 8)
+ (multiple threads with some depth of function calls)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test noexit FAILED (0 of 7)
+ (no exit call in thread, should trap at bogus address)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test join FAILED (0 of 9)
+ (clone and join syscalls)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test thread FAILED (0 of 10)
+ (thread user library functions)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+test locks FAILED (0 of 8)
+ (test lock correctness)
+ Unexpected exception [Errno 2] No such file or directory: '/tmp/tmpO7b8A4/p/user/tester.c'
+
+Passed 0 of 16 tests.
+Overall 0 of 16
+Points 0 of 100

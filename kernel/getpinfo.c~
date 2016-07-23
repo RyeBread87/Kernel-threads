@@ -1,0 +1,24 @@
+#include "pstat.h"
+
+int
+getpinfo(void){
+  struct pstat *ps;
+  struct proc *p;
+  int i;
+
+  if (argptr(0, (void *)&ps, sizeof(*ps)) < 0)
+    return -1;
+  acquire(&ptable.lock);
+  for (i=0; i<NPROC; i++) {
+    p = &ptable.proc[i];
+    ps->pid[i] = p->pid;
+    if (p->state == UNUSED)
+      ps->inuse[i] = 0;
+    else
+      ps->inuse[i] = 1;
+    ps->hticks[i] = p->hticks;
+    ps->lticks[i] = p->lticks;
+  }
+  release(&ptable.lock);
+  return 0;
+}
